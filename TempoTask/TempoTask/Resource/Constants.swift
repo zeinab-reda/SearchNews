@@ -15,7 +15,6 @@ struct K {
     }
     enum StoryBoard:String
     {
-         case boardingSB = "Boarding"
          case dashboardSB = "Dashboard"
     }
     

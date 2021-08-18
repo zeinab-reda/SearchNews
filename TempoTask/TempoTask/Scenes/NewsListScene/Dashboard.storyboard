@@ -9,16 +9,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dashboard-->
+        <!--News-->
         <scene sceneID="haI-Tm-SaL">
             <objects>
-                <viewController storyboardIdentifier="DashboardViewController" id="pVI-fl-Cy7" customClass="DashboardViewController" customModule="NewsAppTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardViewController" id="pVI-fl-Cy7" customClass="DashboardViewController" customModule="TempoTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s0B-86-GEz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Vt-X8-wpT">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="819-04-Gp0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pVI-fl-Cy7" id="554-1I-23A"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Vt-X8-wpT">
+                                <rect key="frame" x="0.0" y="160" width="414" height="702"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -26,13 +33,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5Vt-X8-wpT" firstAttribute="leading" secondItem="dJh-tM-70I" secondAttribute="leading" id="7wf-wr-Ctl"/>
-                            <constraint firstItem="5Vt-X8-wpT" firstAttribute="top" secondItem="dJh-tM-70I" secondAttribute="top" id="Fp5-a7-2M0"/>
+                            <constraint firstItem="819-04-Gp0" firstAttribute="top" secondItem="dJh-tM-70I" secondAttribute="top" id="KWV-2a-lh4"/>
                             <constraint firstItem="dJh-tM-70I" firstAttribute="bottom" secondItem="5Vt-X8-wpT" secondAttribute="bottom" id="Vid-l3-85d"/>
+                            <constraint firstItem="819-04-Gp0" firstAttribute="trailing" secondItem="dJh-tM-70I" secondAttribute="trailing" id="WjY-DW-hZF"/>
                             <constraint firstItem="dJh-tM-70I" firstAttribute="trailing" secondItem="5Vt-X8-wpT" secondAttribute="trailing" id="cEn-p3-Rhm"/>
+                            <constraint firstItem="819-04-Gp0" firstAttribute="leading" secondItem="dJh-tM-70I" secondAttribute="leading" id="f3R-Tp-KaR"/>
+                            <constraint firstItem="5Vt-X8-wpT" firstAttribute="top" secondItem="819-04-Gp0" secondAttribute="bottom" constant="16" id="n2T-WK-bcX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="cxH-AJ-1bi"/>
+                    <navigationItem key="navigationItem" title="News" id="cxH-AJ-1bi"/>
                     <connections>
+                        <outlet property="searchBar" destination="819-04-Gp0" id="yhg-7v-nSh"/>
                         <outlet property="tableView" destination="5Vt-X8-wpT" id="uVs-Ff-f8X"/>
                     </connections>
                 </viewController>
@@ -43,7 +54,7 @@
         <!--Search View Controller-->
         <scene sceneID="MCg-6t-ODs">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="YaP-qU-ZKd" customClass="SearchViewController" customModule="NewsAppTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="YaP-qU-ZKd" customClass="SearchViewController" customModule="TempoTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lDu-so-Zsh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
