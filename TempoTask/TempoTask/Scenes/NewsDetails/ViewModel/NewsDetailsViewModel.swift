@@ -8,26 +8,24 @@
 import Foundation
 import RxSwift
 
+
+
 protocol NewsDetailsViewModelType {
-    
-    var topicObservable:Observable<NewsModel>{get}
+    var topicObservable: Observable<NewsModel> { get }
     func getTopic()
 }
 
-class NewsDetailsViewModel : BaseViewModel , NewsDetailsViewModelType {
-    
+class NewsDetailsViewModel: BaseViewModel, NewsDetailsViewModelType {
     var topicObservable: Observable<NewsModel>
-    private var topic:NewsModel
+    private var topic: NewsModel
     private let topicSubject = PublishSubject<NewsModel>()
- 
-    override init() {
-        
+
+    init(topic: NewsModel) {
+        self.topic = topic
+        topicObservable = topicSubject.asObservable()
+        super.init()
     }
-//    convenience init(topic:NewsModel) {
-//        self.topic = topic
-//        topicObservable = topicSubject.asObserver()
-//        self.init(topic: topic)
-//    }
+
     func getTopic() {
         topicSubject.onNext(topic)
     }

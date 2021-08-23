@@ -12,7 +12,7 @@
         <!--News-->
         <scene sceneID="haI-Tm-SaL">
             <objects>
-                <viewController storyboardIdentifier="DashboardViewController" id="pVI-fl-Cy7" customClass="DashboardViewController" customModule="TempoTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pVI-fl-Cy7" customClass="DashboardViewController" customModule="TempoTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s0B-86-GEz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,12 +73,11 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dN3-0i-Xba" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bfm-s1-Otd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="pVI-fl-Cy7" kind="relationship" relationship="rootViewController" id="0LM-9p-gGK"/>
+                        <segue destination="pVI-fl-Cy7" kind="relationship" relationship="rootViewController" id="7UQ-d7-YlW"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkB-va-pzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -10,7 +10,7 @@ import UIKit
 struct NewsDetailsBuilder {
     static func viewController(_ topic: NewsModel) -> UIViewController {
         let viewModel = NewsDetailsViewModel(topic: topic)
-        let viewController = NewsDetailsViewController(withViewModel: viewModel)
+        let viewController = NewsDetailsController(withViewModel: viewModel)
         return viewController
     }
 }

@@ -16,6 +16,7 @@ final class NewsRouter : NewsRouterType {
     
     weak var viewController:DashboardViewController?
     func navigateToDetails(_ topic:NewsModel){
-        viewController?.navigationController?.pushViewController(NewsDetailsController.view, animated: <#T##Bool#>)
+        viewController?.navigationController?.pushViewController(NewsDetailsBuilder.viewController(topic), animated: true)
+
     }
 }

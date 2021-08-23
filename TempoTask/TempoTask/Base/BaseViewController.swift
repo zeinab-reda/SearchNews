@@ -14,7 +14,7 @@ class BaseViewController: UIViewController, BaseViewProtocol{
     
     
     let hud = JGProgressHUD()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         hud.textLabel.text = "Loading"

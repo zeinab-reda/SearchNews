@@ -20,16 +20,13 @@
 		160AEF0926CC6AF800F1E174 /* HeadlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEEA26CC6AF800F1E174 /* HeadlineTableViewCell.swift */; };
 		160AEF0A26CC6AF800F1E174 /* HeadlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160AEEEB26CC6AF800F1E174 /* HeadlineTableViewCell.xib */; };
 		160AEF0B26CC6AF800F1E174 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160AEEEC26CC6AF800F1E174 /* Dashboard.storyboard */; };
-		160AEF0C26CC6AF800F1E174 /* MyAppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEEE26CC6AF800F1E174 /* MyAppNavigation.swift */; };
 		160AEF0D26CC6AF800F1E174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEEF26CC6AF800F1E174 /* AppDelegate.swift */; };
 		160AEF0E26CC6AF800F1E174 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEF126CC6AF800F1E174 /* Helper.swift */; };
 		160AEF1D26CC6B4800F1E174 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEF1926CC6B4800F1E174 /* BaseViewController.swift */; };
 		160AEF1E26CC6B4800F1E174 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEF1A26CC6B4800F1E174 /* BaseViewModel.swift */; };
-		160AEF1F26CC6B4800F1E174 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEF1B26CC6B4800F1E174 /* Router.swift */; };
 		160AEF2026CC6B4800F1E174 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEF1C26CC6B4800F1E174 /* BaseViewProtocol.swift */; };
 		16A8F5F326D00766001A1D2D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F5F226D00765001A1D2D /* CardView.swift */; };
 		16A8F63926D00F41001A1D2D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F63826D00F41001A1D2D /* UIView+Extension.swift */; };
-		16A8F64826D012D7001A1D2D /* NewsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F64726D012D7001A1D2D /* NewsBuilder.swift */; };
 		16A8F65026D0135B001A1D2D /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F64F26D0135B001A1D2D /* NewsRouter.swift */; };
 		16A8F65926D0155F001A1D2D /* NewsDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F65826D0155F001A1D2D /* NewsDetailsBuilder.swift */; };
 		16A8F65E26D01594001A1D2D /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F65D26D01594001A1D2D /* NewsDetailsViewModel.swift */; };
@@ -71,16 +68,13 @@
 		160AEEEA26CC6AF800F1E174 /* HeadlineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineTableViewCell.swift; sourceTree = "<group>"; };
 		160AEEEB26CC6AF800F1E174 /* HeadlineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadlineTableViewCell.xib; sourceTree = "<group>"; };
 		160AEEEC26CC6AF800F1E174 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
-		160AEEEE26CC6AF800F1E174 /* MyAppNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppNavigation.swift; sourceTree = "<group>"; };
 		160AEEEF26CC6AF800F1E174 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		160AEEF126CC6AF800F1E174 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		160AEF1926CC6B4800F1E174 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		160AEF1A26CC6B4800F1E174 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		160AEF1B26CC6B4800F1E174 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		160AEF1C26CC6B4800F1E174 /* BaseViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
 		16A8F5F226D00765001A1D2D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		16A8F63826D00F41001A1D2D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		16A8F64726D012D7001A1D2D /* NewsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBuilder.swift; sourceTree = "<group>"; };
 		16A8F64F26D0135B001A1D2D /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
 		16A8F65826D0155F001A1D2D /* NewsDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsBuilder.swift; sourceTree = "<group>"; };
 		16A8F65D26D01594001A1D2D /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -261,7 +255,6 @@
 		160AEEED26CC6AF800F1E174 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				160AEEEE26CC6AF800F1E174 /* MyAppNavigation.swift */,
 				160AEEEF26CC6AF800F1E174 /* AppDelegate.swift */,
 			);
 			path = Application;
@@ -280,7 +273,6 @@
 			children = (
 				160AEF1926CC6B4800F1E174 /* BaseViewController.swift */,
 				160AEF1A26CC6B4800F1E174 /* BaseViewModel.swift */,
-				160AEF1B26CC6B4800F1E174 /* Router.swift */,
 				160AEF1C26CC6B4800F1E174 /* BaseViewProtocol.swift */,
 			);
 			path = Base;
@@ -305,7 +297,6 @@
 		16A8F64626D012C3001A1D2D /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				16A8F64726D012D7001A1D2D /* NewsBuilder.swift */,
 				16A8F64F26D0135B001A1D2D /* NewsRouter.swift */,
 			);
 			path = Router;
@@ -653,18 +644,15 @@
 				160AEEF626CC6AF800F1E174 /* AppError.swift in Sources */,
 				160AEF1D26CC6B4800F1E174 /* BaseViewController.swift in Sources */,
 				160AEF1E26CC6B4800F1E174 /* BaseViewModel.swift in Sources */,
-				160AEF0C26CC6AF800F1E174 /* MyAppNavigation.swift in Sources */,
 				160AEEF226CC6AF800F1E174 /* SceneDelegate.swift in Sources */,
 				16A8F65926D0155F001A1D2D /* NewsDetailsBuilder.swift in Sources */,
 				16A8F65026D0135B001A1D2D /* NewsRouter.swift in Sources */,
-				160AEF1F26CC6B4800F1E174 /* Router.swift in Sources */,
 				160AEEF726CC6AF800F1E174 /* NetworkManager.swift in Sources */,
 				16A8F65E26D01594001A1D2D /* NewsDetailsViewModel.swift in Sources */,
 				160AEF2026CC6B4800F1E174 /* BaseViewProtocol.swift in Sources */,
 				16A8F5F326D00766001A1D2D /* CardView.swift in Sources */,
 				160AEF0626CC6AF800F1E174 /* NewsViewModel.swift in Sources */,
 				16A8F63926D00F41001A1D2D /* UIView+Extension.swift in Sources */,
-				16A8F64826D012D7001A1D2D /* NewsBuilder.swift in Sources */,
 				160AEF0926CC6AF800F1E174 /* HeadlineTableViewCell.swift in Sources */,
 				160AEF0526CC6AF800F1E174 /* NewsDetailsController.swift in Sources */,
 				160AEF0726CC6AF800F1E174 /* NewsModel.swift in Sources */,

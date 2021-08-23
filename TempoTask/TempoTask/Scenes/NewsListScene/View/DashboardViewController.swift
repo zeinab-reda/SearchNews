@@ -8,9 +8,10 @@
 import UIKit
 import RxCocoa
 import RxSwift
+
 class DashboardViewController: BaseViewController {
     private var viewModel: NewsViewModelType?
-    private var router: NewsRouterType
+    private var router: NewsRouterType?
     private let disposeBag = DisposeBag()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -21,19 +22,6 @@ class DashboardViewController: BaseViewController {
         setupView()
         setupTableView()
     }
-    init() {
-        
-    }
-    init(withViewModel viewModel: NewsViewModelType, router: NewsRouterType) {
-        self.viewModel = viewModel
-        self.router = router
-        super.init(nibName: "DashboardViewController", bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     private func fetchSearchResults(searchTxt:String)
     {
         // fetch all news
@@ -60,39 +48,16 @@ class DashboardViewController: BaseViewController {
                                                       cellType: HeadlineTableViewCell.self)) { _, element, cell in
             cell.item = element
         }.disposed(by: disposeBag)
-    }
-    //MARK: - Rx
-
-      private func addBindsToViewModel(viewModel: NewsModel) {
-
-       
-
-//          viewModel.placesObservable.bindTo(tableView.rx_itemsWithCellFactory) {
-//              (tableView: UITableView, index, place: Place) in
-//
-//              let indexPath = NSIndexPath(forItem: index, inSection: 0)
-//              let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as PlaceCell
-//
-//              cell.configureWithObject(place)
-//
-//              return cell
-//
-//              }
-//              .addDisposableTo(disposeBag)
-//
-//          tableView.rx_contentOffset
-//              .subscribe { _ in
-//                  if self.searchBar.isFirstResponder() {
-//                      _ = self.searchBar.resignFirstResponder()
-//                  }
-//              }
-//              .addDisposableTo(disposeBag)
         
-      }
-    
+        
+        tableView.rx.modelSelected(NewsModel.self).subscribe { [weak self] topic in
+            self?.router?.navigateToDetails(topic)
+        }.disposed(by: disposeBag)
+    }
     
     private func setupView() {
         viewModel = NewsViewModel()
+        router = NewsRouter()
         viewModel?.loadingDriver.drive { [weak self] isloading in
             isloading == true ? self?.showLoading() :  self?.hideLoading()
             self?.tableView.isHidden = isloading
