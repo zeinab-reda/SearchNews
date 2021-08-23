@@ -10,6 +10,7 @@ import RxCocoa
 import RxSwift
 class DashboardViewController: BaseViewController {
     private var viewModel: NewsViewModelType?
+    private var router: NewsRouterType
     private let disposeBag = DisposeBag()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -20,8 +21,19 @@ class DashboardViewController: BaseViewController {
         setupView()
         setupTableView()
     }
+    init() {
+        
+    }
+    init(withViewModel viewModel: NewsViewModelType, router: NewsRouterType) {
+        self.viewModel = viewModel
+        self.router = router
+        super.init(nibName: "DashboardViewController", bundle: nil)
+    }
     
-
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     private func fetchSearchResults(searchTxt:String)
     {
         // fetch all news
@@ -36,7 +48,7 @@ class DashboardViewController: BaseViewController {
         tableView.register(UINib(nibName: cellIdentifer, bundle: nil),
                            forCellReuseIdentifier: cellIdentifer)
         
-        tableView.rowHeight = 200.0
+        tableView.rowHeight = 250.0
         
         
         // binding table

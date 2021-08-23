@@ -13,7 +13,7 @@
 		160AEEF526CC6AF800F1E174 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEBF26CC6AF700F1E174 /* APIClient.swift */; };
 		160AEEF626CC6AF800F1E174 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEC026CC6AF700F1E174 /* AppError.swift */; };
 		160AEEF726CC6AF800F1E174 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEC126CC6AF700F1E174 /* NetworkManager.swift */; };
-		160AEF0526CC6AF800F1E174 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEE126CC6AF700F1E174 /* SearchViewController.swift */; };
+		160AEF0526CC6AF800F1E174 /* NewsDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEE126CC6AF700F1E174 /* NewsDetailsController.swift */; };
 		160AEF0626CC6AF800F1E174 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEE426CC6AF800F1E174 /* NewsViewModel.swift */; };
 		160AEF0726CC6AF800F1E174 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEE626CC6AF800F1E174 /* NewsModel.swift */; };
 		160AEF0826CC6AF800F1E174 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEEE826CC6AF800F1E174 /* DashboardViewController.swift */; };
@@ -27,6 +27,12 @@
 		160AEF1E26CC6B4800F1E174 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEF1A26CC6B4800F1E174 /* BaseViewModel.swift */; };
 		160AEF1F26CC6B4800F1E174 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEF1B26CC6B4800F1E174 /* Router.swift */; };
 		160AEF2026CC6B4800F1E174 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AEF1C26CC6B4800F1E174 /* BaseViewProtocol.swift */; };
+		16A8F5F326D00766001A1D2D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F5F226D00765001A1D2D /* CardView.swift */; };
+		16A8F63926D00F41001A1D2D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F63826D00F41001A1D2D /* UIView+Extension.swift */; };
+		16A8F64826D012D7001A1D2D /* NewsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F64726D012D7001A1D2D /* NewsBuilder.swift */; };
+		16A8F65026D0135B001A1D2D /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F64F26D0135B001A1D2D /* NewsRouter.swift */; };
+		16A8F65926D0155F001A1D2D /* NewsDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F65826D0155F001A1D2D /* NewsDetailsBuilder.swift */; };
+		16A8F65E26D01594001A1D2D /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F65D26D01594001A1D2D /* NewsDetailsViewModel.swift */; };
 		16FFAACF26CC696D00487BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FFAACE26CC696D00487BD9 /* Assets.xcassets */; };
 		16FFAAD226CC696D00487BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FFAAD026CC696D00487BD9 /* LaunchScreen.storyboard */; };
 		16FFAADD26CC696E00487BD9 /* TempoTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FFAADC26CC696E00487BD9 /* TempoTaskTests.swift */; };
@@ -58,7 +64,7 @@
 		160AEEBF26CC6AF700F1E174 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		160AEEC026CC6AF700F1E174 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		160AEEC126CC6AF700F1E174 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		160AEEE126CC6AF700F1E174 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		160AEEE126CC6AF700F1E174 /* NewsDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsController.swift; sourceTree = "<group>"; };
 		160AEEE426CC6AF800F1E174 /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		160AEEE626CC6AF800F1E174 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		160AEEE826CC6AF800F1E174 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,12 @@
 		160AEF1A26CC6B4800F1E174 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		160AEF1B26CC6B4800F1E174 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		160AEF1C26CC6B4800F1E174 /* BaseViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		16A8F5F226D00765001A1D2D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		16A8F63826D00F41001A1D2D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		16A8F64726D012D7001A1D2D /* NewsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBuilder.swift; sourceTree = "<group>"; };
+		16A8F64F26D0135B001A1D2D /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
+		16A8F65826D0155F001A1D2D /* NewsDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsBuilder.swift; sourceTree = "<group>"; };
+		16A8F65D26D01594001A1D2D /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
 		16FFAAC226CC696C00487BD9 /* TempoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FFAACE26CC696D00487BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16FFAAD126CC696D00487BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -177,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				160AEEDE26CC6AF700F1E174 /* ViewModel */,
-				160AEEDF26CC6AF700F1E174 /* Model */,
 				160AEEE026CC6AF700F1E174 /* View */,
+				16A8F65726D0153A001A1D2D /* Router */,
 			);
 			path = NewsDetails;
 			sourceTree = "<group>";
@@ -186,21 +198,15 @@
 		160AEEDE26CC6AF700F1E174 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				16A8F65D26D01594001A1D2D /* NewsDetailsViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		160AEEDF26CC6AF700F1E174 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		160AEEE026CC6AF700F1E174 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				160AEEE126CC6AF700F1E174 /* SearchViewController.swift */,
+				160AEEE126CC6AF700F1E174 /* NewsDetailsController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 				160AEEE326CC6AF700F1E174 /* ViewModel */,
 				160AEEE526CC6AF800F1E174 /* Model */,
 				160AEEE726CC6AF800F1E174 /* View */,
+				16A8F64626D012C3001A1D2D /* Router */,
 				160AEEEC26CC6AF800F1E174 /* Dashboard.storyboard */,
 			);
 			path = NewsListScene;
@@ -237,6 +244,7 @@
 			children = (
 				160AEEE826CC6AF800F1E174 /* DashboardViewController.swift */,
 				160AEEE926CC6AF800F1E174 /* Cell */,
+				16A8F5F126D0073B001A1D2D /* CustomView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +286,39 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		16A8F5F126D0073B001A1D2D /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				16A8F5F226D00765001A1D2D /* CardView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		16A8F63726D00F25001A1D2D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				16A8F63826D00F41001A1D2D /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		16A8F64626D012C3001A1D2D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				16A8F64726D012D7001A1D2D /* NewsBuilder.swift */,
+				16A8F64F26D0135B001A1D2D /* NewsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		16A8F65726D0153A001A1D2D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				16A8F65826D0155F001A1D2D /* NewsDetailsBuilder.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		16FFAAB926CC696C00487BD9 = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +344,7 @@
 		16FFAAC426CC696C00487BD9 /* TempoTask */ = {
 			isa = PBXGroup;
 			children = (
+				16A8F63726D00F25001A1D2D /* Extensions */,
 				160AEEF026CC6AF800F1E174 /* Utils */,
 				160AEF1826CC6B4800F1E174 /* Base */,
 				160AEEED26CC6AF800F1E174 /* Application */,
@@ -613,12 +655,18 @@
 				160AEF1E26CC6B4800F1E174 /* BaseViewModel.swift in Sources */,
 				160AEF0C26CC6AF800F1E174 /* MyAppNavigation.swift in Sources */,
 				160AEEF226CC6AF800F1E174 /* SceneDelegate.swift in Sources */,
+				16A8F65926D0155F001A1D2D /* NewsDetailsBuilder.swift in Sources */,
+				16A8F65026D0135B001A1D2D /* NewsRouter.swift in Sources */,
 				160AEF1F26CC6B4800F1E174 /* Router.swift in Sources */,
 				160AEEF726CC6AF800F1E174 /* NetworkManager.swift in Sources */,
+				16A8F65E26D01594001A1D2D /* NewsDetailsViewModel.swift in Sources */,
 				160AEF2026CC6B4800F1E174 /* BaseViewProtocol.swift in Sources */,
+				16A8F5F326D00766001A1D2D /* CardView.swift in Sources */,
 				160AEF0626CC6AF800F1E174 /* NewsViewModel.swift in Sources */,
+				16A8F63926D00F41001A1D2D /* UIView+Extension.swift in Sources */,
+				16A8F64826D012D7001A1D2D /* NewsBuilder.swift in Sources */,
 				160AEF0926CC6AF800F1E174 /* HeadlineTableViewCell.swift in Sources */,
-				160AEF0526CC6AF800F1E174 /* SearchViewController.swift in Sources */,
+				160AEF0526CC6AF800F1E174 /* NewsDetailsController.swift in Sources */,
 				160AEF0726CC6AF800F1E174 /* NewsModel.swift in Sources */,
 				160AEEF326CC6AF800F1E174 /* Constants.swift in Sources */,
 				160AEF0E26CC6AF800F1E174 /* Helper.swift in Sources */,
