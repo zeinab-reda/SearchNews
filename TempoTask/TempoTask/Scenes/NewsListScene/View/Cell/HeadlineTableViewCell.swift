@@ -19,9 +19,6 @@ class HeadlineTableViewCell: UITableViewCell {
     var item:Article? {
         didSet{
             newsTitle.text = item?.title
-//            newsSnippet.text = item?.articleDescription
-//            newsDate.text = Helper.convertDatetoString(from: item?.publishedAt ?? Date(), to: "dd/MM/yyyy HH:mm")
-//
             newsSource.text = item?.source?.name
             if let link = item?.urlToImage, let url = URL(string: link) {
                 newsImg.af.setImage(withURL: url, placeholderImage: UIImage(named: "placeholder"))

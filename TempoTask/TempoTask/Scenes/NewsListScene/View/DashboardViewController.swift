@@ -11,7 +11,6 @@ import RxSwift
 
 class DashboardViewController: BaseViewController {
     private var viewModel: NewsViewModelType?
-    private var router: NewsRouterType?
     private let disposeBag = DisposeBag()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -29,6 +28,10 @@ class DashboardViewController: BaseViewController {
 
     }
     
+    @objc public static func create() -> DashboardViewController {
+        return UIStoryboard(name: K.StoryBoard.dashboardSB.rawValue, bundle: Bundle.main).instantiateViewController(withIdentifier: String(describing: self)) as! DashboardViewController
+     }
+    
     
     private func setupTableView()
     {
@@ -37,8 +40,7 @@ class DashboardViewController: BaseViewController {
                            forCellReuseIdentifier: cellIdentifer)
         
         tableView.rowHeight = 250.0
-        
-        
+     
         // binding table
         viewModel?.newsDriver.drive { (articles) in
             
@@ -50,14 +52,16 @@ class DashboardViewController: BaseViewController {
         }.disposed(by: disposeBag)
         
         
-        tableView.rx.modelSelected(NewsModel.self).subscribe { [weak self] topic in
-            self?.router?.navigateToDetails(topic)
+        tableView.rx.modelSelected(Article.self).subscribe { [weak self] topic in
+            let details = NewsDetailsViewController.create()
+            details.article = topic.element
+            self?.navigationController?.pushViewController(details, animated: true)
+
         }.disposed(by: disposeBag)
     }
     
     private func setupView() {
         viewModel = NewsViewModel()
-        router = NewsRouter()
         viewModel?.loadingDriver.drive { [weak self] isloading in
             isloading == true ? self?.showLoading() :  self?.hideLoading()
             self?.tableView.isHidden = isloading
